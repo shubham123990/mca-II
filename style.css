@@ -1,0 +1,83 @@
+body {
+  
+    background-color: rgb(84, 58, 58);
+    align-items: center;
+}
+* {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+.head {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(229, 213, 213);
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 20px;
+    
+}
+.wrapper {
+    height: 300px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-left: 70px;
+    justify-content: space-between;
+    background-color: rgba(249, 215, 215, 0.866);
+    margin-bottom: 10px;
+}
+.wrapper .item {
+    height: 300px;
+    min-width: 30%;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(14, 0, 0, 0.937);
+    padding: 0.5px;
+    flex-flow: column-wrap;
+    border-bottom: 1px rgb(234, 231, 231);
+}
+.wrapper .item img {
+    height: 100%;
+    width: 100%;
+}
+.c-box {
+    height: content;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-flow: column;
+    padding: 1px;
+} 
+.c-box .content {
+    height: content;
+    min-width: 30%;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.c-box .content p {
+    color: rgb(18, 17, 17);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.c-box .content h2 {
+    color: rgb(18, 18, 18);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+

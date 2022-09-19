@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <link rel="icon" href="logo.png">
+    <title>SignUp | NEWS24</title>
+</head>
+
+<!--<script>
+    function verifyPassword() {
+
+    }
+</script>-->
+
+
+
+<style>
+    * {
+        overflow: hidden;
+    }
+    
+    body {
+        background: linear-gradient(to right, #ff726f, #7e0041);
+        background-color: rgb(220, 220, 220);
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        height: 100vh;
+        margin: -20px 0 50px;
+    }
+    
+    .container {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        width: 768px;
+        max-width: 100%;
+        min-height: 480px;
+    }
+    
+    .div-signup {
+        padding-left: 15%;
+    }
+    
+    form {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        position: fixed;
+    }
+    
+    form div {
+        margin: 20px;
+    }
+    
+    form div input {
+        margin-right: 10px;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        padding: 1%;
+        background-color: #f2c2cb;
+    }
+    
+    form button {
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 5rem;
+        border: none;
+        background-color: #7e0041;
+        color: #fff;
+        margin-top: 1%;
+        margin-left: 14%;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="container" id="container" style="padding: 10px;">
+        <div style="float: center;">
+            <h2><b style="color:red;">NEWS</b>24</h2>
+        </div>
+        
+        <div class="div-signup">
+            <form action="/signup" method="post" >
+                <div class="name">
+                    <span><i aria-hidden="true"></i></span>
+                    <input type="text" name="fname" placeholder="First Name" required />
+                    <span><i aria-hidden="true"></i></span>
+                    <input type="text" name="lname" placeholder="Last Name" required />
+                </div>
+                <div class="email">
+                    <span><i aria-hidden="true"></i></span>
+                    <input style="width: 28.55%;" type="email" float="right" name="email" placeholder="Email" required />
+                </div>
+                <div class="birthdate">
+                    <span><i aria-hidden="true"></i></span>
+                    <input type="date" name="bdate" placeholder="Birth Date" required />
+                </div>
+                <div class="password">
+                   <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" required />
+
+                    <span id="message"></span>
+                    <input type="password" name="conf-password" placeholder="Confirm-Password" required />
+                </div>
+                <div style="padding-left: 100px; padding-top: 10px;">
+
+                    Already have an account ? <a href={{url_for('login')}} style="text-decoration: none; color:#7e0041;">Sign-In</a><br>
+                </div>
+                <button type="submit" >SIGN UP</button>
+                
+                
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
